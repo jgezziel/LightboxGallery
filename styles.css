@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.__cont-gallery{
+  max-width: 1200px;
+  columns: 5 200px;
+  column-gap: 1rem;
+  margin: 5rem auto;
+  padding: 0 1rem;
+}
+.__item-gallery{
+  margin: 1rem auto;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.__img-gallery{
+  cursor: zoom-in;
+  width: 100%;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+.__img-gallery:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+/*Lightbox*/
+.open-lightbox{
+  overflow: hidden;
+}
+
+#lightbox{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  background-image: linear-gradient(0deg, black, transparent);
+}
+.cont-close-lightbox{
+  display:flex;
+  justify-content: end;
+  margin-bottom: 0.5rem;
+}
+.close-lightbox{
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.lightbox-overlay{
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+.lightbox-content{
+  width: 100%;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+.lightbox-caption{
+  color: #fff;
+}
